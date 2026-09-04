@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lifetime Precision Roofing LLC | DFW Residential Roofing</title>
+<meta name="description" content="Lifetime Precision Roofing LLC provides residential roofing, roof repairs, replacements, inspections, storm damage service and 24/7 roofing help throughout Dallas-Fort Worth and surrounding areas.">
+<style>
+:root {
+  --red:#d51f2d; --red2:#a90f1c; --black:#090a0c; --ink:#15181b;
+  --cream:#f5f3ef; --white:#fff; --muted:#666d73; --line:#dedbd4;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}
+.wrap{width:min(1180px,92%);margin:auto}
+.topbar{background:#08090a;color:#fff;font-size:14px}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:9px 0}
+.topbar b{color:#ff4b58}
+.header{background:#fff;position:sticky;top:0;z-index:50;box-shadow:0 2px 18px rgba(0,0,0,.08)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:11px 0}
+.logo-wrap{display:flex;align-items:center;gap:14px}
+.logo-img{width:76px;height:76px;object-fit:cover;border-radius:50%;background:#000}
+.brand{font-weight:900;font-size:19px;line-height:1.05;text-transform:uppercase;max-width:260px}
+.brand span{display:block;color:var(--red)}
+.nav{display:flex;gap:24px;align-items:center;font-weight:800;font-size:13px;text-transform:uppercase}
+.nav a:hover{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 21px;border-radius:4px;background:var(--red);color:#fff;font-weight:900;text-transform:uppercase;letter-spacing:.3px;border:none;cursor:pointer}
+.btn:hover{background:var(--red2)}
+.btn.dark{background:#101214}
+.btn.outline{background:transparent;border:2px solid #fff}
+.hero{position:relative;min-height:650px;display:flex;align-items:center;color:#fff;background-image:linear-gradient(90deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.76) 45%,rgba(0,0,0,.22) 77%),url('images/IMG_2783.jpg');background-size:cover;background-position:center}
+.hero-content{padding:85px 0;max-width:720px}
+.eyebrow{font-size:13px;font-weight:900;letter-spacing:2px;text-transform:uppercase;color:#ff6974}
+h1{font-size:clamp(48px,7vw,84px);line-height:.93;margin:14px 0 22px;text-transform:uppercase;letter-spacing:-2px}
+h1 span{color:#ef2534}
+.hero p{font-size:19px;line-height:1.6;color:#f0f1f2;max-width:650px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.trustbar{background:#111316;color:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{padding:24px 18px;border-right:1px solid #2a2e32}
+.trust-item:last-child{border-right:0}
+.trust-item b{display:block;font-size:16px;text-transform:uppercase}
+.trust-item span{color:#adb4ba;font-size:13px}
+section{padding:86px 0}
+.kicker{color:var(--red);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}
+h2{font-size:clamp(34px,5vw,58px);line-height:1.02;margin:9px 0 16px;text-transform:uppercase;letter-spacing:-1px}
+.lead{font-size:17px;line-height:1.7;color:var(--muted);max-width:760px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.feature-img{width:100%;height:520px;object-fit:cover;border-radius:6px;box-shadow:0 18px 45px rgba(0,0,0,.16)}
+.checks{display:grid;gap:14px;margin:25px 0}
+.check{display:flex;gap:12px;align-items:flex-start;font-weight:700}
+.check i{font-style:normal;color:var(--red);font-size:20px}
+.services{background:var(--cream)}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:36px}
+.service{background:#fff;border:1px solid var(--line);padding:27px 22px;min-height:220px;transition:.2s}
+.service:hover{transform:translateY(-4px);box-shadow:0 15px 30px rgba(0,0,0,.08);border-color:#d7aeb2}
+.service .num{font-size:12px;color:var(--red);font-weight:900;letter-spacing:1px}
+.service h3{font-size:20px;margin:11px 0}
+.service p{color:var(--muted);font-size:14px;line-height:1.6}
+.band{background:var(--red);color:#fff;padding:54px 0}
+.band .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px}
+.band h2{margin:0;font-size:clamp(30px,4vw,48px)}
+.band p{margin:8px 0 0;color:#ffe8ea}
+.projects{background:#0b0d0f;color:#fff}
+.projects .lead{color:#adb5bb}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:38px}
+.project{position:relative;overflow:hidden;background:#171a1e;border-radius:4px}
+.project img{width:100%;height:310px;object-fit:cover;display:block;transition:.35s}
+.project:hover img{transform:scale(1.04)}
+.project-cap{position:absolute;left:0;right:0;bottom:0;padding:36px 16px 15px;background:linear-gradient(transparent,rgba(0,0,0,.86));font-weight:900;text-transform:uppercase;font-size:13px}
+.process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:40px}
+.process-card{border-top:4px solid var(--red);padding:23px 20px;background:#fff;box-shadow:0 10px 28px rgba(0,0,0,.07)}
+.process-card b{font-size:42px;color:#e3e3e3}
+.process-card h3{margin:5px 0 10px}
+.process-card p{color:var(--muted);line-height:1.6;font-size:14px}
+.storm{background:#ece9e3}
+.form-area{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:start}
+.form-card{background:#101214;padding:30px;border-radius:5px;color:#fff}
+.form-card h3{font-size:27px;margin:0 0 6px;text-transform:uppercase}
+.form-card p{color:#b8bec3}
+input,select,textarea{width:100%;padding:14px 15px;border-radius:3px;border:1px solid #333a40;background:#090b0d;color:#fff;margin:6px 0;font:inherit}
+textarea{min-height:112px;resize:vertical}
+.faq{background:#fff}
+details{border-bottom:1px solid #ddd;padding:18px 0}
+summary{font-weight:900;cursor:pointer;font-size:17px}
+details p{color:var(--muted);line-height:1.6}
+.footer{background:#08090b;color:#aeb5bb;padding:62px 0 26px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
+.footer h4{color:#fff;margin:0 0 17px;text-transform:uppercase}
+.footer a,.footer p{font-size:14px;line-height:1.8}
+.footer a:hover{color:#fff}
+.socials{display:flex;gap:9px;flex-wrap:wrap;margin-top:18px}
+.socials a{border:1px solid #32383e;padding:9px 11px;border-radius:3px;color:#fff}
+.copy{margin-top:40px;padding-top:20px;border-top:1px solid #25292d;font-size:12px;display:flex;justify-content:space-between;gap:18px}
+.mobile-call{display:none;position:fixed;left:12px;right:12px;bottom:12px;background:var(--red);color:white;padding:15px;text-align:center;font-weight:900;z-index:60;border-radius:4px}
+@media(max-width:980px){
+ .nav a:not(.btn){display:none} .split,.form-area{grid-template-columns:1fr} .service-grid,.process-grid{grid-template-columns:1fr 1fr} .gallery{grid-template-columns:1fr 1fr} .footer-grid{grid-template-columns:1fr 1fr} .trust-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:620px){
+ .topbar .wrap{display:block} .topbar span{display:block;margin:3px 0} .brand{font-size:14px;max-width:170px} .logo-img{width:58px;height:58px}
+ .nav .btn{display:none} .hero{min-height:610px;background-position:62% center} .hero-content{padding:65px 0} h1{font-size:52px}
+ .service-grid,.process-grid,.gallery,.footer-grid,.trust-grid{grid-template-columns:1fr} .trust-item{border-right:0;border-bottom:1px solid #2a2e32} .band .wrap{display:block} .band .btn{margin-top:20px}
+ .feature-img{height:390px} .mobile-call{display:block} body{padding-bottom:70px}
+}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <span>Dallas-Fort Worth Metroplex & Surrounding Areas</span>
+    <span><b>24/7 ROOFING HELP:</b> <a href="tel:2144472905">(214) 447-2905</a></span>
+  </div>
+</div>
+
+<header class="header">
+  <div class="wrap">
+    <a class="logo-wrap" href="#home">
+      <img class="logo-img" src="images/IMG_2792.jpg" alt="Lifetime Precision Roofing LLC logo">
+      <div class="brand">Lifetime <span>Precision</span> Roofing LLC</div>
+    </a>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+      <a class="btn" href="#estimate">Free Estimate</a>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-content">
+      <div class="eyebrow">Residential Roofing • DFW, Texas</div>
+      <h1>Your roof.<br><span>Our precision.</span></h1>
+      <p>Roof repairs, replacements, inspections, storm damage work and emergency roofing service for homeowners across Dallas-Fort Worth and surrounding communities.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#estimate">Request a Free Estimate</a>
+        <a class="btn outline" href="tel:2144472905">Call (214) 447-2905</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trustbar">
+  <div class="wrap trust-grid">
+    <div class="trust-item"><b>24/7 Availability</b><span>When roof problems can’t wait</span></div>
+    <div class="trust-item"><b>DFW Focused</b><span>Metroplex & surrounding areas</span></div>
+    <div class="trust-item"><b>Clear Communication</b><span>Know what’s happening with your roof</span></div>
+    <div class="trust-item"><b>Detailed Work</b><span>Precision from inspection to finish</span></div>
+  </div>
+</div>
+
+<section id="about">
+  <div class="wrap split">
+    <div>
+      <div class="kicker">Your DFW Roofing Partner</div>
+      <h2>Protecting your home starts at the top.</h2>
+      <p class="lead">Your roof is one of the most important parts of your home. Lifetime Precision Roofing LLC helps homeowners understand what their roof needs and provides practical solutions for repairs, replacement and storm-related damage.</p>
+      <div class="checks">
+        <div class="check"><i>✓</i><div>Residential roof repairs and full replacements</div></div>
+        <div class="check"><i>✓</i><div>Storm, hail and wind damage inspections</div></div>
+        <div class="check"><i>✓</i><div>Emergency roofing help available 24/7</div></div>
+        <div class="check"><i>✓</i><div>Service across Dallas-Fort Worth and nearby areas</div></div>
+      </div>
+      <a class="btn dark" href="#estimate">Schedule an Inspection</a>
+    </div>
+    <img class="feature-img" src="images/IMG_2782.jpg" alt="Completed roofing project by Lifetime Precision Roofing LLC">
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="kicker">Residential Roofing Services</div>
+    <h2>Solutions built around your roof.</h2>
+    <p class="lead">Whether you are dealing with a leak, an aging roof, or recent storm damage, we can help you determine the next step.</p>
+    <div class="service-grid">
+      <div class="service"><div class="num">01</div><h3>Roof Replacement</h3><p>Complete replacement when your existing roof has reached the end of its useful life or has extensive damage.</p></div>
+      <div class="service"><div class="num">02</div><h3>Roof Repair</h3><p>Targeted repairs for leaks, missing or damaged shingles, flashing concerns and other roof problems.</p></div>
+      <div class="service"><div class="num">03</div><h3>Roof Inspections</h3><p>A closer look at the roof system to identify visible damage, wear and areas that may need attention.</p></div>
+      <div class="service"><div class="num">04</div><h3>Storm Damage</h3><p>Roof evaluations and restoration work following North Texas hail, wind and severe weather.</p></div>
+      <div class="service"><div class="num">05</div><h3>Emergency Leaks</h3><p>24/7 availability when water intrusion or sudden roof damage needs timely attention.</p></div>
+      <div class="service"><div class="num">06</div><h3>Roof Maintenance</h3><p>Proactive roof care and repair recommendations designed to address smaller issues before they grow.</p></div>
+      <div class="service"><div class="num">07</div><h3>Commercial Roofing</h3><p>Roofing support for commercial properties throughout the DFW area.</p></div>
+      <div class="service"><div class="num">08</div><h3>Roof Deck Restoration</h3><p>When hidden damage is found, we can address compromised decking before the finished roof system goes on.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <div>
+      <h2>Roof problem? Don’t wait for the next storm.</h2>
+      <p>Call or request an inspection and get a clearer picture of what your roof needs.</p>
+    </div>
+    <a class="btn dark" href="tel:2144472905">Call 214-447-2905</a>
+  </div>
+</section>
+
+<section class="projects" id="projects">
+  <div class="wrap">
+    <div class="kicker">Our Work</div>
+    <h2>Real roofing projects. Real results.</h2>
+    <p class="lead">A look at completed roofs and restoration work from Lifetime Precision Roofing LLC.</p>
+    <div class="gallery">
+      <div class="project"><img src="images/IMG_2782.jpg" alt="Completed Roof — Aerial View"><div class="project-cap">Completed Roof — Aerial View</div></div><div class="project"><img src="images/IMG_2783.jpg" alt="Completed Roofing Project"><div class="project-cap">Completed Roofing Project</div></div><div class="project"><img src="images/IMG_2784.jpg" alt="Finished Shingle Roof"><div class="project-cap">Finished Shingle Roof</div></div><div class="project"><img src="images/IMG_2785.jpg" alt="Ridge & Shingle Detail"><div class="project-cap">Ridge & Shingle Detail</div></div><div class="project"><img src="images/IMG_2790.jpg" alt="Roof Deck Restoration"><div class="project-cap">Roof Deck Restoration</div></div><div class="project"><img src="images/IMG_2791.jpg" alt="Finished Roof Result"><div class="project-cap">Finished Roof Result</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="wrap">
+    <div class="kicker">How It Works</div>
+    <h2>A straightforward roofing process.</h2>
+    <p class="lead">We keep the process simple so you know what comes next.</p>
+    <div class="process-grid">
+      <div class="process-card"><b>01</b><h3>Contact Us</h3><p>Call, text or request an estimate online and tell us what is happening with your roof.</p></div>
+      <div class="process-card"><b>02</b><h3>Roof Inspection</h3><p>We inspect visible roofing conditions and identify areas that may require repair or replacement.</p></div>
+      <div class="process-card"><b>03</b><h3>Review Options</h3><p>We explain the findings and discuss the roofing work that makes sense for the property.</p></div>
+      <div class="process-card"><b>04</b><h3>Complete the Work</h3><p>We perform the agreed roofing work with attention to the details that protect the home.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="storm" id="estimate">
+  <div class="wrap form-area">
+    <div>
+      <div class="kicker">Free Roofing Estimate</div>
+      <h2>Tell us what your roof needs.</h2>
+      <p class="lead">Serving homeowners throughout Dallas-Fort Worth and surrounding areas. For urgent roofing needs, call us directly at <strong>(214) 447-2905</strong>.</p>
+      <div class="checks">
+        <div class="check"><i>✓</i><div>Roof leaks and repairs</div></div>
+        <div class="check"><i>✓</i><div>Full roof replacements</div></div>
+        <div class="check"><i>✓</i><div>Hail and storm damage</div></div>
+        <div class="check"><i>✓</i><div>Roof inspections</div></div>
+      </div>
+    </div>
+    <div class="form-card">
+      <h3>Request Your Estimate</h3>
+      <p>Fill out the form and use the phone number below for immediate assistance.</p>
+      <form onsubmit="event.preventDefault(); alert('Thanks! This website form is ready to be connected to your preferred email, CRM, or form service.');">
+        <input type="text" placeholder="Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="text" placeholder="Property Address">
+        <select>
+          <option>What do you need help with?</option>
+          <option>Roof Repair</option>
+          <option>Roof Replacement</option>
+          <option>Storm / Hail Damage</option>
+          <option>Roof Inspection</option>
+          <option>Emergency Leak</option>
+          <option>Commercial Roofing</option>
+        </select>
+        <textarea placeholder="Tell us a little about the roofing issue"></textarea>
+        <button class="btn" type="submit" style="width:100%;margin-top:8px">Request Estimate</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap split">
+    <div>
+      <div class="kicker">Roofing FAQ</div>
+      <h2>Questions homeowners ask.</h2>
+      <p class="lead">Not sure whether you need a repair, inspection or replacement? Start with a roof evaluation.</p>
+    </div>
+    <div>
+      <details open><summary>Do you provide emergency roofing service?</summary><p>Yes. Lifetime Precision Roofing LLC is available 24/7 for urgent roofing needs in the DFW area.</p></details>
+      <details><summary>What areas do you serve?</summary><p>We serve the Dallas-Fort Worth Metroplex and surrounding areas.</p></details>
+      <details><summary>Can you inspect storm or hail damage?</summary><p>Yes. We can inspect visible roof damage after North Texas hail, wind and severe weather and explain the condition of the roof.</p></details>
+      <details><summary>How do I request an estimate?</summary><p>Call or text (214) 447-2905, or complete the estimate form on this page.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer" id="contact">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo-wrap">
+          <img class="logo-img" src="images/IMG_2792.jpg" alt="Lifetime Precision Roofing LLC">
+          <div class="brand" style="color:#fff">Lifetime <span>Precision</span> Roofing LLC</div>
+        </div>
+        <p>Residential and commercial roofing service across the Dallas-Fort Worth Metroplex and surrounding areas.</p>
+        <div class="socials">
+          <a href="https://instagram.com/ltproofing_llc" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://www.tiktok.com/@ltproofingllc" target="_blank" rel="noopener">TikTok</a>
+        </div>
+      </div>
+      <div><h4>Contact</h4><p><a href="tel:2144472905">(214) 447-2905</a><br>Available 24/7<br>Dallas-Fort Worth, TX</p></div>
+      <div><h4>Services</h4><p><a href="#services">Roof Repair</a><br><a href="#services">Roof Replacement</a><br><a href="#services">Storm Damage</a><br><a href="#services">Roof Inspections</a><br><a href="#services">Commercial Roofing</a></p></div>
+      <div><h4>Quick Links</h4><p><a href="#about">About</a><br><a href="#projects">Our Work</a><br><a href="#process">Our Process</a><br><a href="#estimate">Free Estimate</a><br><a href="tel:2144472905">Call Now</a></p></div>
+    </div>
+    <div class="copy"><span>© 2026 Lifetime Precision Roofing LLC. All rights reserved.</span><span>DFW Metroplex & Surrounding Areas</span></div>
+  </div>
+</footer>
+
+<a class="mobile-call" href="tel:2144472905">Call 24/7 — (214) 447-2905</a>
+</body>
+</html>
